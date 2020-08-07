@@ -119,7 +119,7 @@ class SingleLinkedList {
          next = node.next;
          node.next = prev;
          prev = node;
-     node = next;
+         node = next;
         }
     }
 
