@@ -1,4 +1,3 @@
-const arr = [1,2,3,4];
 
 Array.prototype.myMap = function(cb){
 if(!cb || typeof cb !== 'function') throw TypeError();
@@ -33,6 +32,7 @@ return initialValue;
 }
 
 
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const mArr = arr.myMap((item)=>item*2);
 const fArr = arr.myFilter((item)=>item%2 == 0);
 const rArr = arr.myReduce((acc, curr)=>acc+curr, 0);
